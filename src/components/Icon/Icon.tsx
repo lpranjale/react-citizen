@@ -1,4 +1,4 @@
-import { IconName } from "../../tokens/Iconography";
+import { IconFamily } from "../../tokens/Iconography";
 import { Color } from "../../tokens/Colorimetry";
 
 import classNames from "classnames";
@@ -11,7 +11,7 @@ export interface IconProps {
   /**
    * The name of the icon to use
    */
-  icon: IconName;
+  family: IconFamily;
 
   /**
    * Color of the Icon
@@ -22,11 +22,6 @@ export interface IconProps {
    * Content displayed within the Icon
    */
   children?: React.ReactNode;
-
-  /**
-   * Primary action
-   */
-  onClick?: () => void;
 }
 
 /**
@@ -40,3 +35,8 @@ const styles = classNames();
 export const Icon: FunctionComponent<IconProps> = () => (
   <svg className={styles}></svg>
 );
+
+/**
+ * The icon family
+ */
+export { IconFamily };

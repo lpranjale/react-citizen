@@ -1,4 +1,4 @@
-import { IconName } from "./Iconography";
+import { IconFamily } from "./Iconography";
 import icons from "../assets/icons.svg";
 import { Meta, IconGallery, IconItem } from "@storybook/addon-docs";
 
@@ -7,7 +7,7 @@ import { Meta, IconGallery, IconItem } from "@storybook/addon-docs";
 # Icons
 
 <IconGallery>
-{[...Object.values(IconName)].map((icon) => (
+{[...Object.values(IconFamily)].map((icon) => (
 
 <IconItem name={icon}>
   <svg

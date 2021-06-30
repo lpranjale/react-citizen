@@ -1,7 +1,7 @@
 /**
  * List of icons available
  */
-export enum IconName {
+export enum IconFamily {
   Calendar = "calendar",
   Check = "check",
   Circle = "circle",

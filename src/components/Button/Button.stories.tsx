@@ -1,4 +1,5 @@
 import { Button, ButtonProps } from "./Button";
+import { Icon, IconFamily } from "../Icon/Icon";
 import { Story } from "@storybook/react";
 
 /**
@@ -17,6 +18,21 @@ export default {
     design: {
       type: "figma",
       url: figmaURL,
+    },
+  },
+  argTypes: {
+    children: {
+      options: ["Empty", "Text", "Icon", "IconWithText"],
+      mapping: {
+        Text: "👇 Click Me!",
+        Icon: <Icon family={IconFamily.Shield} />,
+        IconWithText: (
+          <>
+            <Icon family={IconFamily.Shield} />
+            👇 Click Me!
+          </>
+        ),
+      },
     },
   },
 };
