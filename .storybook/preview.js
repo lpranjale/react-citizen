@@ -1,3 +1,5 @@
+import "../src/index.css";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +8,10 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+  a11y: {
+    // the target DOM element
+    element: "#root",
+    // sets the execution mode for the addon
+    manual: false,
+  },
+};

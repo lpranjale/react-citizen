@@ -1,0 +1,26 @@
+import { IconName } from "./Iconography";
+import icons from "../assets/icons.svg";
+import { Meta, IconGallery, IconItem } from "@storybook/addon-docs";
+
+<Meta title="Iconography" />
+
+# Icons
+
+<IconGallery>
+{[...Object.values(IconName)].map((icon) => (
+
+<IconItem name={icon}>
+  <svg
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
+    stroke="#232A3A"
+    fill="#232A3A"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <use href={icons + "#" + icon} />
+  </svg>
+</IconItem>
+))}
+
+</IconGallery>

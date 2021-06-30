@@ -1,0 +1,20 @@
+import { Font } from "./Typography";
+
+import { Meta, Typeset } from "@storybook/addon-docs";
+
+<Meta title="Typography" />
+
+# Typography
+
+## **Standard**
+
+**Font:** Proxima Nova
+
+**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontFamily={Font.Standard}
+  fontSizes={[12, 14, 16, 20, 24, 28, 32, 40, 48]}
+  fontWeight={900}
+  sampleText={"Nature is wise. You can learn everywhere and from everything."}
+/>

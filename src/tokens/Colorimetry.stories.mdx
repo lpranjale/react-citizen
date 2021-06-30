@@ -1,0 +1,43 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
+import { Color, colors } from "./Colorimetry";
+
+<Meta title="Colorimetry" />
+
+# Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="lets do this! 😃"
+    colors={[colors[Color.Primary]]}
+  />
+  <ColorItem
+    title="Secondary"
+    subtitle="are you sure? 🤔"
+    colors={[colors[Color.Secondary]]}
+  />
+  <ColorItem
+    title="Ternary"
+    subtitle="almost there... 🙄"
+    colors={[colors[Color.Ternary]]}
+  />
+  <ColorItem
+    title="Positive"
+    subtitle="well done 😲"
+    colors={[colors[Color.Positive]]}
+  />
+  <ColorItem
+    title="Negative"
+    subtitle="ouch 🤨"
+    colors={[colors[Color.Negative]]}
+  />
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      colors[Color.Dark],
+      colors[Color.Medium],
+      colors[Color.Light],
+      colors[Color.Lighter],
+    ]}
+  />
+</ColorPalette>
