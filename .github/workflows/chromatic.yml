@@ -5,11 +5,6 @@ name: "Chromatic"
 
 # Event for the workflow
 on:
-  push:
-    branches:
-      - master
-      - develop
-
   pull_request:
     branches:
       - master
@@ -36,3 +31,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: true # 👈 Option to prevent the workflow from failing
