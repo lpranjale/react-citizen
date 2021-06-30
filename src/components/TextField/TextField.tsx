@@ -99,12 +99,12 @@ export enum Sentiment {
   /**
    * Sentiment for positive feedback
    */
-  Positive,
+  Positive = "positive",
 
   /**
    * Sentiment for negative feedback
    */
-  Negative,
+  Negative = "negative",
 }
 
 /**
