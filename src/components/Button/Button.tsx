@@ -8,9 +8,9 @@ import { FunctionComponent } from "react";
  */
 export interface ButtonProps {
   /**
-   * Indication of whether the button is secondary call to action
+   * Indication of whether the button style is hollow
    */
-  secondary?: boolean;
+  hollow?: boolean;
 
   /**
    * Color of the button
