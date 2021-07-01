@@ -15,7 +15,7 @@ export interface RegistrationProps {
   /**
    * Action to submit a registration
    */
-  onSubmit: () => void;
+  onForward: () => void;
 }
 
 /**

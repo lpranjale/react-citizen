@@ -11,7 +11,7 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/SchoolEntrance",
+  title: "Onboarding/SchoolEntrance",
   component: SchoolEntrance,
   parameters: {
     design: {

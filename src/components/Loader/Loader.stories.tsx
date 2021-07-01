@@ -11,12 +11,21 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/Loader",
+  title: "Core/Loader",
   component: Loader,
   parameters: {
     design: {
       type: "figma",
       url: figmaURL,
+    },
+  },
+  argTypes: {
+    children: {
+      options: ["Content"],
+      defaultValue: "Content",
+      mapping: {
+        Content: "✅ Loaded",
+      },
     },
   },
 };

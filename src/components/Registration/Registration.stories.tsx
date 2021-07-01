@@ -1,4 +1,6 @@
 import { Registration, RegistrationProps } from "./Registration";
+import { TextField } from "../TextField/TextField";
+
 import { Story } from "@storybook/react";
 
 /**
@@ -11,12 +13,30 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/Registration",
+  title: "Onboarding/Registration",
   component: Registration,
   parameters: {
     design: {
       type: "figma",
       url: figmaURL,
+    },
+  },
+  argTypes: {
+    children: {
+      options: ["Empty"],
+      defaultValue: "Empty",
+      mapping: {
+        Registration: (
+          <>
+            <TextField title="First Name"></TextField>
+            <TextField title="Last Name"></TextField>
+            <TextField title="Email"></TextField>
+            <TextField title="Grade"></TextField>
+            <TextField title="Password"></TextField>
+            <TextField title="Confirm Password"></TextField>
+          </>
+        ),
+      },
     },
   },
 };

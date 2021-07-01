@@ -6,9 +6,9 @@ import { FunctionComponent } from "react";
  */
 export interface ImpactStatementProps {
   /**
-   * Impact proposition
+   * Proposed impact statement
    */
-  proposition?: string;
+  statement?: string;
 
   /**
    * Error response for validating impact statement
@@ -18,7 +18,7 @@ export interface ImpactStatementProps {
   /**
    * Action for submitting an impact statement proposition
    */
-  onSubmit: () => void;
+  onForward: () => void;
 }
 
 /**

@@ -13,6 +13,11 @@ export interface ImpactQuizProps {
   questioNumber?: number;
 
   /**
+   * Indicates the quiz is complete
+   */
+  isComplete?: boolean;
+
+  /**
    * Questions to be asked in the quiz
    */
   children: React.ReactElement<ImpactQuizQuestionProps>[];
@@ -20,22 +25,22 @@ export interface ImpactQuizProps {
   /**
    * Action taken when quiz is started
    */
-  onStartQuiz: () => void;
+  onStart: () => void;
 
   /**
    * Action taken when quiz is finished
    */
-  onFinishQuiz: () => void;
+  onFinish: () => void;
 
   /**
    * Action to cycle to next question
    */
-  onNextQuestion: () => void;
+  onForward: () => void;
 
   /**
    * Action to cycle to previous question
    */
-  onPreviousQuestion: () => void;
+  onBackward: () => void;
 }
 
 /**

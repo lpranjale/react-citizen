@@ -6,29 +6,39 @@ import { FunctionComponent } from "react";
  */
 export interface LegalAgreementProps {
   /**
-   * Icon to be displayed for question
+   * Legal agreement phase
    */
-  needsDisagreeConfirmation: boolean;
+  phase?: LegalAgreementPhase;
 
   /**
-   * Action for agreement
+   * Action for moving forward in the legal agreement
    */
-  onAgree: () => void;
+  onForward: () => void;
 
   /**
-   * Action for starting a disagreement
+   * Action for moving back in the legal agreement
    */
-  onDisagree: () => void;
+  onBackward: () => void;
+}
+
+/**
+ * The phase of the legal agreement
+ */
+export enum LegalAgreementPhase {
+  /**
+   * Initial phase of legal agreement
+   */
+  Begin = "begin",
 
   /**
-   * Action for confirming a disagreement
+   * Legal agreement has been read
    */
-  onDisagreeConfirm: () => void;
+  Read = "read",
 
   /**
-   * Action for cancelling a disagreement
+   * Initial phase of disagreement
    */
-  onDisagreeCancel: () => void;
+  Disagree = "disagree",
 }
 
 /**

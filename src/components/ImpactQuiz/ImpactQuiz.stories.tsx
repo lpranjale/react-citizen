@@ -1,5 +1,8 @@
 import { ImpactQuiz, ImpactQuizProps } from "./ImpactQuiz";
+import { ImpactQuizQuestion } from "../ImpactQuizQuestion/ImpactQuizQuestion";
+
 import { Story } from "@storybook/react";
+import { IconFamily } from "../Icon/Icon";
 
 /**
  * URL to the component design
@@ -11,12 +14,52 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/ImpactQuiz",
+  title: "Onboarding/ImpactQuiz",
   component: ImpactQuiz,
   parameters: {
     design: {
       type: "figma",
       url: figmaURL,
+    },
+  },
+  argTypes: {
+    children: {
+      options: ["Empty", "Single", "Multiple"],
+      defaultValue: "Empty",
+      mapping: {
+        Single: (
+          <>
+            <ImpactQuizQuestion
+              icon={IconFamily.Shield}
+              summary="Question #1"
+              description="Does this appear correct?"
+              image=""
+              onPositive={() => {}}
+              onNegative={() => {}}
+            />
+          </>
+        ),
+        Multiple: (
+          <>
+            <ImpactQuizQuestion
+              icon={IconFamily.Shield}
+              summary="Question #1"
+              description="Does this appear correct?"
+              image=""
+              onPositive={() => {}}
+              onNegative={() => {}}
+            />
+            <ImpactQuizQuestion
+              icon={IconFamily.Shield}
+              summary="Question #2"
+              description="Does this appear correct?"
+              image=""
+              onPositive={() => {}}
+              onNegative={() => {}}
+            />
+          </>
+        ),
+      },
     },
   },
 };

@@ -11,7 +11,7 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/LegalAgreement",
+  title: "Onboarding/LegalAgreement",
   component: LegalAgreement,
   parameters: {
     design: {

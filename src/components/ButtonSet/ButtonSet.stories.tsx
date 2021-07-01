@@ -1,4 +1,6 @@
 import { ButtonSet, ButtonSetProps } from "./ButtonSet";
+import { Button } from "../Button/Button";
+
 import { Story } from "@storybook/react";
 
 /**
@@ -11,12 +13,28 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/ButtonSet",
+  title: "Core/ButtonSet",
   component: ButtonSet,
   parameters: {
     design: {
       type: "figma",
       url: figmaURL,
+    },
+  },
+  argTypes: {
+    children: {
+      options: ["Single", "Multiple"],
+      defaultValue: "Single",
+      mapping: {
+        Single: <Button>Try Me!</Button>,
+        Multiple: (
+          <>
+            <Button>Try Me!</Button>
+            <Button>Try Me!</Button>
+            <Button>Try Me!</Button>
+          </>
+        ),
+      },
     },
   },
 };

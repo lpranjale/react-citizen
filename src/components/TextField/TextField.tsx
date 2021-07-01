@@ -11,11 +11,6 @@ export interface TextFieldProps {
   title?: string;
 
   /**
-   * Text shown in field
-   */
-  text: string;
-
-  /**
    * Feedback for text validation
    */
   feedback?: string;
@@ -29,6 +24,11 @@ export interface TextFieldProps {
    * Format of the text field (i.e., password, email, etc.)
    */
   format?: TextFieldFormat;
+
+  /**
+   * Text shown in field
+   */
+  children?: React.ReactElement<string>;
 }
 
 export enum TextFieldFormat {

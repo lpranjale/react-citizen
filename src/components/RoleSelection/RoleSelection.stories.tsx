@@ -11,7 +11,7 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/RoleSelection",
+  title: "Onboarding/RoleSelection",
   component: RoleSelection,
   parameters: {
     design: {

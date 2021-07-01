@@ -1,4 +1,4 @@
-import { IconName } from "../../tokens/Iconography";
+import { IconFamily } from "../../tokens/Iconography";
 
 import classNames from "classnames";
 import { FunctionComponent } from "react";
@@ -15,7 +15,7 @@ export interface ImpactQuizQuestionProps {
   /**
    * Icon to be displayed for question
    */
-  icon: IconName;
+  icon: IconFamily;
 
   /**
    * Summary of the question
@@ -35,12 +35,12 @@ export interface ImpactQuizQuestionProps {
   /**
    * Action for positive feedback
    */
-  onPositiveFeedback: () => void;
+  onPositive: () => void;
 
   /**
    * Action for negative feedback
    */
-  onNegativeFeedback: () => void;
+  onNegative: () => void;
 }
 
 /**

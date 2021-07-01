@@ -8,7 +8,7 @@ export interface SchoolEntranceProps {
   /**
    * School code entered by the user
    */
-  schoolCode: string;
+  schoolCode?: string;
 
   /**
    * School name corresponding to the school code
@@ -23,7 +23,7 @@ export interface SchoolEntranceProps {
   /**
    * Action to submit school code
    */
-  onSubmitSchoolCode: () => void;
+  onForward: () => void;
 }
 
 /**

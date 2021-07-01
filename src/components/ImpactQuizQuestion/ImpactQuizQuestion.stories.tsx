@@ -14,7 +14,7 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/ImpactQuizQuestion",
+  title: "Onboarding/ImpactQuizQuestion",
   component: ImpactQuizQuestion,
   parameters: {
     design: {

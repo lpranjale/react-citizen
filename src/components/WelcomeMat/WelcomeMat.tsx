@@ -8,7 +8,7 @@ export interface WelcomeMatProps {
   /**
    * Action to enter the platform
    */
-  onEnter: () => void;
+  onForward: () => void;
 }
 
 /**

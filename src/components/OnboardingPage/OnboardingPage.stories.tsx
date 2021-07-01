@@ -1,4 +1,6 @@
 import { OnboardingPage, OnboardingPageProps } from "./OnboardingPage";
+import { RoleSelection } from "../RoleSelection/RoleSelection";
+
 import { Story } from "@storybook/react";
 
 /**
@@ -11,12 +13,26 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/OnboardingPage",
+  title: "Onboarding/OnboardingPage",
   component: OnboardingPage,
   parameters: {
     design: {
       type: "figma",
       url: figmaURL,
+    },
+  },
+  argTypes: {
+    children: {
+      options: ["RoleSelection"],
+      defaultValue: "RoleSelection",
+      mapping: {
+        RoleSelection: (
+          <RoleSelection
+            onStudentForward={() => {}}
+            onTeacherForward={() => {}}
+          />
+        ),
+      },
     },
   },
 };

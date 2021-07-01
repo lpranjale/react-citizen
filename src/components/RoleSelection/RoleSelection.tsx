@@ -8,12 +8,12 @@ export interface RoleSelectionProps {
   /**
    * Action for teachers
    */
-  onStudentSelection: () => void;
+  onTeacherForward: () => void;
 
   /**
    * Action for students
    */
-  onTeacherSelection: () => void;
+  onStudentForward: () => void;
 }
 
 /**

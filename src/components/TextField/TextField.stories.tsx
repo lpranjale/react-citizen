@@ -11,7 +11,7 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/TextField",
+  title: "Core/TextField",
   component: TextField,
   parameters: {
     design: {

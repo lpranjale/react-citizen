@@ -12,7 +12,7 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/Button",
+  title: "Core/Button",
   component: Button,
   parameters: {
     design: {
@@ -23,6 +23,7 @@ export default {
   argTypes: {
     children: {
       options: ["Empty", "Text", "Icon", "IconWithText"],
+      defaultValue: "Empty",
       mapping: {
         Text: "👇 Click Me!",
         Icon: <Icon family={IconFamily.Shield} />,

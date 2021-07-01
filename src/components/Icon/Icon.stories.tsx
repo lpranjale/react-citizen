@@ -11,12 +11,21 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/Icon",
+  title: "Core/Icon",
   component: Icon,
   parameters: {
     design: {
       type: "figma",
       url: figmaURL,
+    },
+  },
+  argTypes: {
+    children: {
+      options: ["Empty", "Text"],
+      defaultValue: "Empty",
+      mapping: {
+        Text: "Click Me!",
+      },
     },
   },
 };

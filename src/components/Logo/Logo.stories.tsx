@@ -11,7 +11,7 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/Logo",
+  title: "Core/Logo",
   component: Logo,
   parameters: {
     design: {

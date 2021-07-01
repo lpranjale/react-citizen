@@ -1,4 +1,6 @@
 import { NavigationBar, NavigationBarProps } from "./NavigationBar";
+import { Icon, IconFamily } from "../Icon/Icon";
+
 import { Story } from "@storybook/react";
 
 /**
@@ -11,12 +13,28 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/NavigationBar",
+  title: "Core/NavigationBar",
   component: NavigationBar,
   parameters: {
     design: {
       type: "figma",
       url: figmaURL,
+    },
+  },
+  argTypes: {
+    children: {
+      options: ["Empty", "Icons"],
+      defaultValue: "Empty",
+      mapping: {
+        Icons: (
+          <>
+            <Icon family={IconFamily.Calendar} />
+            <Icon family={IconFamily.Goal} />
+            <Icon family={IconFamily.Explore} />
+            <Icon family={IconFamily.User} />
+          </>
+        ),
+      },
     },
   },
 };

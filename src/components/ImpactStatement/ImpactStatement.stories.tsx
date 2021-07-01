@@ -11,7 +11,7 @@ const figmaURL =
  * Storybook component configuration
  */
 export default {
-  title: "Library/ImpactStatement",
+  title: "Onboarding/ImpactStatement",
   component: ImpactStatement,
   parameters: {
     design: {
