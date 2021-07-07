@@ -1,8 +1,8 @@
 import { Color } from "../../tokens/Colorimetry";
-
+import React from "react";
 import classNames from "classnames";
 import { FunctionComponent } from "react";
-
+import './Button.css';
 /**
  * Configurable properties for Button component
  */
@@ -22,6 +22,7 @@ export interface ButtonProps {
    */
   children?: React.ReactNode;
 
+
   /**
    * Primary action
    */
@@ -36,8 +37,9 @@ const styles = classNames();
 /**
  * Button component
  */
-export const Button: FunctionComponent<ButtonProps> = () => (
+export const Button: FunctionComponent<ButtonProps> = ({children,color}) => (
+
   <>
-    <button className={styles}></button>
+    <button  className={`button ${color}`}>{children}</button>
   </>
 );

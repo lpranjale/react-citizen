@@ -1,6 +1,7 @@
 import { Button, ButtonProps } from "./Button";
 import { Icon, IconFamily } from "../Icon/Icon";
 import { Story } from "@storybook/react";
+import { Color, colors } from "../../tokens/Colorimetry";
 
 /**
  * URL to the component design
@@ -46,5 +47,13 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 /**
  * Component stories
  */
-export const Default: Story<ButtonProps> = Template.bind({});
-Default.args = {};
+
+
+
+export const Primary: Story<ButtonProps > = Template.bind({});
+Primary.args = {hollow:true,color:Color.Primary,children:'Default'};
+export const Secondary: Story<ButtonProps > = Template.bind({});
+Secondary.args = {hollow:true,color:Color.Secondary,children:'Default'};
+export const Ternary: Story<ButtonProps > = Template.bind({});
+Ternary.args = {hollow:true,color:Color.Ternary,children:'Default'};
+

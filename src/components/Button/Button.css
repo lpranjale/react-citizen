@@ -1,0 +1,17 @@
+.button {
+    border:none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 167px;
+    height: 54px;
+    cursor: pointer;
+}
+
+.primary {background-color: #3BD0F2;}
+.secondary {background-color: 	#099420;}
+.ternary {background-color: #DDEDFF;}
